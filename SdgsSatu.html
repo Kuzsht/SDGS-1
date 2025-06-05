@@ -10,23 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class = "back">
-        <h3><a href="LandingPage.html" target="_blank">< Back</a></h3>
-    </div>
-    
     <div class = "container1">
-        <img src="pti.jpg" alt="Logo PTI">
+        <div class = "back">
+            <h3><a href="LandingPage.html">< Back</a></h3>
+        </div>
+
         <div class = "title1">
-            <h1>Bersama Wujudkan Dunia Tanpa Kemiskinan</h1>
+            <h1>Bersama Wujudkan Dunia <span class = "blu">Tanpa Kemiskinan.</span></h1>
         </div>
 
         <div class = "desk">
-            <p>Anjay</p>
+            <p>Kemiskinan adalah tantangan global yang menghambat kesejahteraan, pendidikan, dan masa depan jutaan orang di seluruh dunia. Gerakan "Bersama Wujudkan Dunia Tanpa Kemiskinan" lahir dari keyakinan bahwa perubahan nyata hanya dapat terjadi jika semua pihak pemerintah, masyarakat, sektor swasta, dan individu bersatu dan bergerak bersama.</p>
         </div>
     </div>
 
     <div class = "container2">
-        <div class = "title3">
+        <div class = "title2">
             <h1>Deskripsi Lengkap</h1>
             <h1>Mengenai</h1>
             <h1>SDGs 1</h1>
@@ -34,26 +33,35 @@
 
         <div class = "poin">
             <div class = "box">
-                <h2>Deskripsi</h2>
-                <p>Anjay</p>
+                <div class = "teks">
+                    <h2>Deskripsi</h2>
+                    <p>Tujuan ini berfokus pada penghapusan kemiskinan ekstrem (orang yang hidup dengan kurang dari $1,90 per hari) dan mengurangi separuh jumlah orang miskin menurut standar nasional masing-masing negara. Selain itu, tujuan ini mencakup perluasan akses terhadap sumber daya ekonomi, layanan dasar, kepemilikan tanah dan properti, serta perlindungan terhadap risiko ekonomi, sosial, dan lingkungan.</p>
+                </div>
+                
                 <div class = "gambar">
-                    <img src="pti.jpg" alt="Logo PTI">
+                    <img src="https://static6.depositphotos.com/1160695/662/i/450/depositphotos_6629107-stock-photo-indian-and-hygiene-on-a.jpg" alt="gmb1">
                 </div>
             </div>
 
             <div class = "box">
-                <h2>Esensi</h2>
-                <p>Anjay</p>
+                <div class = "teks">
+                    <h2>Esensi</h2>
+                    <p>Mengakhiri segala bentuk kemiskinan di dunia merupakan fondasi utama pembangunan berkelanjutan. Esensinya adalah menjamin bahwa setiap orang, terutama yang paling rentan, memiliki akses terhadap kebutuhan dasar seperti pangan, tempat tinggal, layanan kesehatan, pendidikan, pekerjaan yang layak, dan perlindungan sosial serta menekankan keadilan sosial dan inklusi ekonomi. </p>
+                </div>
+
                 <div class = "gambar">
-                    <img src="pti.jpg" alt="Logo PTI">
+                    <img src="https://st.depositphotos.com/1561509/2053/i/450/depositphotos_20533481-stock-photo-pushkar-india.jpg" alt="gmb2">
                 </div>
             </div>
 
             <div class = "box">
-                <h2>Solusi</h2>
-                <p>Anjay</p>
+                <div class = "teks">
+                    <h2>Solusi</h2>
+                    <p>Untuk mencapai tujuan “Tanpa Kemiskinan”, berbagai solusi perlu dilakukan secara terintegrasi oleh pemerintah, masyarakat, dan individu. Pemerintah dapat memperluas program perlindungan sosial seperti bantuan tunai, jaminan kesehatan, dan subsidi kebutuhan pokok, serta menciptakan lapangan kerja yang layak dengan menyediakan pelatihan keterampilan serta investasi dalam infrastruktur dasar.</p>
+                </div>
+
                 <div class = "gambar">
-                    <img src="pti.jpg" alt="Logo PTI">
+                    <img src="https://static8.depositphotos.com/1003580/884/i/450/depositphotos_8843669-stock-photo-refugee-camp-poverty-hungry-children.jpg" alt="gmb3">
                 </div>
             </div>
         </div>
@@ -61,33 +69,108 @@
 </body>
 
 <style>
-    body {
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: "Space Grotesk", sans-serif;
+    }
 
+    body {
+    width: 100%;
+    height: 100%;
+    }
+
+    .container1 {
+        background-image: URL('https://cdn.pixabay.com/photo/2016/09/02/22/40/man-1640460_1280.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 750px;
     }
 
     .back {
-        color: blue;
+        padding: 10px;
+        margin-left: 80px;
+    }
+
+    .back a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: x-large;
+        font-weight: bolder;
     }
 
     .title1 {
-        color: rgb(0, 0, 0);
+        width: 700px;
+        color: rgb(255, 255, 255);
+        margin-left: 100px;
+        padding-top: 10px;
+        font-size: 220%;
+    }
+
+    .blu {
+        color: rgb(75, 171, 255);
+    }
+
+    .desk {
+        margin-left: 1100px;
+        width: 300px;
+        padding-top: 50px;
+        margin-right: 100px;
+        text-align: justify;
+        color: white;
+    }
+
+    .container2 {
+        margin-right: 100px;
+        margin-left: 100px;
+        padding-top: 100px;
+    }
+
+    .title2 {
+        text-align: center;
+        font-size: 220%;
     }
 
     .poin {
         display: flex;
         justify-content: center;
+        padding-top: 100px;
+        margin-left: 30px;
+        margin-right: 10px;
     }
 
     .poin h2 {
         padding: 20px;
+        padding-top: 0px;
+        color: rgb(75, 171, 255);
+        font-size: 250%;
     }
 
     .poin p {
+        text-align: justify;
         padding: 20px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    .box {
+        width: 500px;
+        padding: 0px;
+    }
+
+    .teks {
+        box-shadow: -3px 0px 0px 0px rgb(225, 225, 225);
     }
 
     .gambar {
+        margin-top: 70px;
         padding: 20px;
+    }
+
+    .gambar img {
+        width: 380px;
+        border-radius: 25px;
     }
 </style>
 </html>
