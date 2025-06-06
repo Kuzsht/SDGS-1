@@ -13,19 +13,19 @@
     <div class="navbar">
         <div class="logo">SDGs POINT 1</div>
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Urgensi</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="SdgsSatu.html">About</a>
+            <a href="#urgensi">Urgensi</a>
+            <a href="#contact">Contact</a>
         </div>
 
         <div class="auth-buttons">
             <a href="HalamanLogin.html" class="login">Login</a>
-            <a href="#" class="signup">Sign Up</a>
+            <a href="SignUp.html" class="signup">Sign Up</a>
         </div>
     </div>
 
-    <div class = "container1">
+    <div class = "container1" id="home">
         <div class = "teks1">
             <h1>Bersama Wujudkan Dunia <span class = "blu">Tanpa Kemiskinan.</span></h1>
             <p>Kemiskinan adalah tantangan global yang menghambat kesejahteraan, pendidikan, dan masa depan jutaan orang di seluruh dunia. Gerakan "Bersama Wujudkan Dunia Tanpa Kemiskinan" lahir dari keyakinan bahwa perubahan nyata hanya dapat terjadi jika semua pihak pemerintah, masyarakat, sektor swasta, dan individu bersatu dan bergerak bersama.</p>
@@ -40,7 +40,7 @@
         </div>
     </div>
 
-    <div class = "container2">
+    <div class = "container2" id="case">
         <div class = "boks">
             <a href="Afrika.html" class="Afrika">Angka Kemiskinan di Afrika yang Semakin Meningkat</a>
         </div>
@@ -54,7 +54,7 @@
         </div>
     </div>
 
-    <div class = "container3">
+    <div class = "container3" id="urgensi">
         <div class = "teks2">
             <h1>Pentingnya Gen Z Paham</h1>
             <h1>SDGs Point 1</h1>
@@ -92,7 +92,7 @@
         </div>
     </div>
 
-    <div class = "container4">
+    <div class = "container4" id="action">
         <div class = "layoutcontainer4">
             <div class = "teks3">
                 <div class = "title">
@@ -127,32 +127,32 @@
     </div>
 
     <div class = "container6">
-        <div class = "footer">
+        <div class = "footer" id="contact">
             <div class = "point">
                 <h3>About SDGs 1</h3>
-                <p>SDGs 1 bertujuan untuk mengakhiri kemiskinan dalam segala bentuk di seluruh dunia.</p>
+                <p>SDGs 1 bertujuan untuk mengakhiri kemiskinan dalam segala bentuk di seluruh dunia dan seluruh dunia akan merasakan kemakmuran yang sesungguhnya</p>
             </div>
 
             <div class = "point">
                 <h3>Quick Links</h3>
-                <p>Home</p>
-                <p>About</p>
-                <p>Case</p>
-                <p>Urgensi</p>
-                <p>Action</p>
+                <a href="#home">Home</a>
+                <a href="SdgsSatu.html">About</a>
+                <a href="#case">Case</a>
+                <a href="#urgensi">Urgensi</a>
+                <a href="#action">Action</a>
             </div>
 
             <div class = "point">
-                <h3>Member</h3>
-                <p>Raditya</p>
-                <p>Dimas</p>
-                <p>Hilmiy</p>
-                <p>Irvan</p>
+                <h3>Contact</h3>
+                <p>Raditya (089528004511)</p>
+                <p>Dimas (085930137015)</p>
+                <p>Hilmiy (085103051135)</p>
+                <p>Irvan (085895089845)</p>
             </div>
 
             <div class = "point">
                 <h3>Quotes</h3>
-                <p>Wong Asor Ora Bakal Ndelosor lan Seng Cangkeme Dukur Bakalan Gugur.</p>
+                <p>Wong Asor Ora Bakal Ndelosor, Seng Cangkeme Dukur Bakalan Gugur, Wong Liyo Ngerti Opo, Wong Liyo Ga Ngerti Opo Opo.</p>
             </div>
         </div>
     </div>
@@ -169,6 +169,11 @@
     width: 100%;
     height: 100%;
     }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px; /* Sesuaikan ini dengan tinggi navbar kamu */
+}
 
     .navbar {
         position: fixed;
@@ -323,7 +328,6 @@
         border-radius: 10px;
         margin-left: 10px;
         margin-right: 10px;
-        margin-bottom: 100px;
         transition: background-color 0.5s ease, transform 0.5s;
         box-shadow: 2px 2px 4px rgb(69, 69, 69);
     }
@@ -341,9 +345,7 @@
     }
 
     .container3 {
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-bottom: 100px;
+        margin: 100px;
         height: 600px;
         border-radius: 50px;
         background-color: rgb(75, 171, 255);
@@ -505,6 +507,14 @@
 
     .point p {
         text-align: justify;
+    }
+
+    .point a {
+        margin-bottom: 10px;
+        text-align: justify;
+        text-decoration: none;
+        color: white;
+        display: block;
     }
 </style>
 </html>
